@@ -38,8 +38,9 @@ body {
 }
 
 .header-logo {
-  flex-wrap: wrap;
-  width: 30%;
+  height: 90%;
+  width: 20%;
+  margin-top:10px;
 }
 
 #inputSearch{
