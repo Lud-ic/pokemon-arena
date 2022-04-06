@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300&family=Oxygen:wght@300&display=swap');
 
 *{
-    margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 
@@ -13,9 +13,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden; 
-  font-family: 'Lobster', cursive;
-  font-family: 'Merriweather', serif;
+  overflow-x: hidden;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Merriweather', serif; */
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -24,21 +24,18 @@ header {
   height: 30%;
   width: 100%;
   display: flex;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 
 
 .search-button{
   background-color:#434343
 }
-  
-}
+
 .header-logo {
   flex-wrap: wrap;
   width: 30%;
 }
-
-
 
 #inputSearch{
   display: flex;
@@ -80,39 +77,55 @@ header {
 }
 
 .info-cards{
-  max-width: 200px;
+  width: 40vw;
   font-size: 0.9em;
-  text-align:center;
-  padding:0.8em;
+  /* text-align:center; */
+  padding: 2vh 2vw;
   color:rgb(0, 0, 0);
   background-color:rgb(255, 255, 255);
   font: arial; color: #434343;
-  border-radius:16px ; 
+  border-radius:16px ;
   background-color: #FFCE45;
-  flex-direction: column;
-} 
+  display: flex;
+  flex-direction: row;
+}
+
+.img-name {
+ width: 25%;
+}
 
 .img-card{
   object-fit: fit;
-  width: 100%;
-  background-image: url(image/bg-card.png);
+  width: 90%;
+
 }
 
-#num {
-text-align: center;
-font-weight: bold;
-border-radius: 0.3rem;
-background-color: white;
-display: flex;
-font-size: 2%px;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-align-items: center;
-justify-content: center;
-z-index: 0;
-margin-left: 30px;
-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+
+.card-details {
+  width: 60%;
+}
+
+.number-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 15%;
+}
+
+.num {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  background-color: white;
+  display: flex;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+
 }
 
 .calculation {
@@ -135,7 +148,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   font-weight: bolder;
 }
 
-#type, #about, #name {
+.type, .about, .name {
 color: #424b54;
 }
 
@@ -154,4 +167,11 @@ footer {
 
 a{
   text-decoration: none;
+}
+
+
+@media (max-width: 769px) {
+  .info-cards{
+    width: 80vw;
+  }
 }
