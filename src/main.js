@@ -10,16 +10,16 @@ function cardsPokemons(data) {
     .map(
       (item) => `
     <div class="info-cards">
-      <div class="img-name">
+      <div class="img-and-name-container">
         <img class="img-card" src="${item.img}"/>
         <p class="name"> ${item.name}</p>
       </div>
       <div class="card-details">
-        <p class="title"> <strong> Rarity: </strong> ${item["pokemon-rarity"]}</p>
-        <p class="title"><strong> Generation: </strong> ${item.generation.name}</p>
-        <p class="title"><strong> Type: </strong> ${item.type.join(" | ")}</p>
-        <p class="title"><strong> Weaknesses: </strong> ${item.weaknesses.join(" | ")}</p>
-        <p class="title"><strong> Resistant: </strong> ${item.resistant.join(" | ")}</p>
+        <p><strong> Rarity: </strong> ${item["pokemon-rarity"]}</p>
+        <p><strong> Generation: </strong> ${item.generation.name}</p>
+        <p><strong> Type: </strong> ${item.type.join(" | ")}</p>
+        <p><strong> Weaknesses: </strong> ${item.weaknesses.join(" | ")}</p>
+        <p><strong> Resistant: </strong> ${item.resistant.join(" | ")}</p>
       </div>
       <div class="number-container">
         <p class="num">  ${item.num}</p>
