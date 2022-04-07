@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="title-area">
+    <img class="header-logo" src="image/logo2.svg" title="logo-Pokemon-Arena">
+  </header>
+  <main>
+
+      <form>
+        <div class="search">
+          <label for="type">
+            <input type="search" id="inputSearch" class="input-search" placeholder="Search Name">
+          </label>
+
+          <div class="container-filters">
+
+            <select class="select-typefilters" id="types-filter" title="types-filter">
+              <option disabled selected>Types</option>
+              <option value="water">Water</option>
+              <option value="dragon">Dragon</option>
+              <option value="electric">Eletric</option>
+              <option value="fairy">Fairy</option>
+              <option value="ghost">Ghost</option>
+              <option value="fire">Fire</option>
+              <option value="ice">Ice</option>
+              <option value="grass">Grass</option>
+              <option value="bug">Bug</option>
+              <option value="fighting">Fighting</option>
+              <option value="normal">Normal</option>
+              <option value="rock">Rock</option>
+              <option value="psychic">Psychic</option>
+              <option value="ground">Ground</option>
+              <option value="poison">Poison</option>
+              <option value="flying">Flying</option>
+            </select>
+
+            <select id="rarity-filter" class="filter" title="rarity-filter">
+              <option disabled="" selected="">Rarity</option>
+              <option value="normal">Normal</option>
+              <option value="legendary">Legendary</option>
+              <option value="mythic">Mythic</option>
+            </select>
+
+            <select id="weaknesses-filter" class="filter" title="weaknesses-filter">
+              <option disabled="" selected="">Weaknesses</option>
+              <option value="water">Water</option>
+              <option value="electric">Electric</option>
+              <option value="grass">Grass</option>
+              <option value="fighting">Figthing</option>
+              <option value="fairy">Fairy</option>
+              <option value="fire">Fire</option>
+              <option value="bug">Bug</option>
+              <option value="steel">Steel</option>
+              <option value="ice">Ice</option>
+              <option value="rock">Rock</option>
+              <option value="ground">Ground</option>
+              <option value="flying">Flying</option>
+              <option value="poison">Poison</option>
+              <option value="psychic">Psychic</option>
+              <option value="dragon">Dragon</option>
+              <option value="dark">Dark</option>
+              <option value="ghost">Ghost</option>
+            </select>
+
+            <select id="resistant-filter" class="filter" title="resistant-filter">
+              <option disabled="" selected="">Resistant</option>
+              <option value="water">Water</option>
+              <option value="electric">Electric</option>
+              <option value="grass">Grass</option>
+              <option value="fighting">Figthing</option>
+              <option value="fairy">Fairy</option>
+              <option value="fire">Fire</option>
+              <option value="bug">Bug</option>
+              <option value="steel">Steel</option>
+              <option value="ice">Ice</option>
+              <option value="rock">Rock</option>
+              <option value="ground">Ground</option>
+              <option value="flying">Flying</option>
+              <option value="poison">Poison</option>
+              <option value="psychic">Psychic</option>
+              <option value="dragon">Dragon</option>
+              <option value="dark">Dark</option>
+              <option value="ghost">Ghost</option>
+            </select>
+
+            <select name="sort" id="sortAlphabet" class="sort-by" title="sortAlphabet">
+              <option disabled="" selected="">Sort By</option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+
+            <button type="reset" class="refresh-button" id="clearButton">Clear</button>
+          </div>
+        </div>
+      </form>
+    <p class="calculation" id="calculation"></p>
+    <ul class="cards" id="cards"></ul>
+
+    <div class="return-top-container">
+      <a href="#top" class="return-top-link"><img src="image/top-icon.svg" alt="ícone-seta" class="top-icon"></a>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <img class="image-footer" src="./image/pikachu.svg" alt="pikachu">
+    <div class="info-authors"><h3>Created by</h3>
+    <p class="authors"><a href="https://github.com/Gregisa" target="_blank">Isabela Gregoraci</a>,
+    <a href="https://github.com/JackeAguiar" target="_blank">Jackeline Aguiar</a>,
+    <a href="https://github.com/leticiaantunesjpeg" target="_blank"> Leticia Antunes</a>,
+    <a href="https://github.com/Lud-ic" target="_blank"> Ludmila Magalhães</a>,
+    <a href="https://github.com/MariaLuizaSantana" target="_blank"> Maria Luiza Costa</a>,
+    <a href="https://github.com/Tati-Mendonca" target="_blank"> Tatiane Mendonça</a> &
+    <a href="https://github.com/WayraArendartchukCastro" target="_blank"> Wayra Arendartchuk Castro</a>
+    </p></div>
+    <img class="image-footer" src="./image/pokebola.png" alt="pokebola">
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
