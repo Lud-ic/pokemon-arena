@@ -6,11 +6,10 @@ export const searchByName = (selectByName, pokemons) =>
 export const selectType = (selectByType, pokemons) =>
     pokemons.filter((select) => select.type.includes(selectByType));
 
-
-export const calcType = (pokemons, selectByType) => {
-    const type = pokemons.filter(search => search.type.includes(selectByType));
-    return Math.round(((type.length * 100) / pokemons.length) * 100) / 100;
-};
+export const percentageCalc = (total,portion) => {
+    const percentage = Math.round((portion * 100)/total).toFixed(2);
+    return percentage
+}
 
 export const sortAZ = (data, order) => {
     const sortaz = [...data]
@@ -20,5 +19,3 @@ export const sortAZ = (data, order) => {
         return sortaz.sort((a, z) => a.name > z.name ? -1 : 1);
     }
 };
-
-
