@@ -91,6 +91,7 @@ body {
   grid-gap: 5em;
   padding: 2em;
   border:#369b9e;
+  margin:auto;
 }
 
 .info-cards{
@@ -158,7 +159,7 @@ body {
   border-radius: 0.3rem;
   background-color: white;
   display: flex;
-  font-size: 20px;
+  font-size: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -200,24 +201,18 @@ color: #424b54;
   right: 0.25rem;
   bottom: -5em;
   width: 3em;
-  pointer-events: none;
 }
 .return-top-link {
   color: #2C579D;
   display: inline-block;
   position: fixed;
   pointer-events: all;
-  top: calc(100vh - 5rem);
+  top: calc(85vh - 5rem);
   font-size: 2rem;
   line-height: 3rem;
-  text-align: center;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
   padding: 0.25rem;
-}
-.return-top-link a:link :visited :hover :active {
-  color: #4558ff;
 }
 
 footer {
@@ -240,8 +235,14 @@ a{
   color: white;
   text-decoration: none;
 }
+a:hover {
+  color: #FFCE45;
+}
 
 @media (max-width: 1000px) {
+.header-logo{
+  width:40%;
+}
 .cards {
   flex-direction: column;
   justify-content: center;
@@ -338,7 +339,6 @@ a{
     margin: 2em 0 2em 0;
     width: 40%;
   }
-
   .image-footer{
     display: none;
   }
