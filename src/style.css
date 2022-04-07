@@ -15,15 +15,19 @@ body {
   background-size: cover;
   overflow-x: hidden;
   font-family: sans-serif;
-
 }
 
-header {
-  background-color: #8FBDD3;
-  height: 30%;
+.title-area{
+  background-color:#2C579D;
+  height: 23%;
   width: 100%;
   display: flex;
-
+  justify-content: center;
+}
+.header-logo {
+  height: 90%;
+  width: 20%;
+  margin-top:10px;
 }
 
 
@@ -32,8 +36,9 @@ header {
 }
 
 .header-logo {
-  flex-wrap: wrap;
-  width: 30%;
+  height: 90%;
+  width: 20%;
+  margin-top:10px;
 }
 
 #inputSearch{
@@ -86,7 +91,6 @@ header {
   flex-direction: row;
 }
 
-
 .number-container-mobile {
   display: none;
 }
@@ -100,6 +104,7 @@ header {
  flex-direction: column;
  justify-content: space-between;
  gap: 10px;
+
 }
 
 .img-card{
@@ -170,15 +175,23 @@ header {
 }
 
 footer {
-  margin: auto;
-  color:#E0EEEE;
-  padding: 5%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #313131;
+  color: white;
   font-weight: bold;
- text-align: center;
- box-shadow: none;
+  text-align: center;
+  box-shadow: none;
+}
+
+.authors {
+  padding: 0 4vw;
 }
 
 a{
+  color: white;
   text-decoration: none;
 }
 
@@ -212,6 +225,10 @@ a{
 }
 
 @media (max-width: 769px) {
+  .header-logo{
+    width:50%;
+  }
+  
   .info-cards{
     width: 50vw;
     flex-direction: column;
@@ -240,3 +257,27 @@ a{
     align-items: flex-start;
   }
 }
+
+a:hover {
+  color: #FFCE45;
+}
+
+@media (max-width:480px){
+  .header-logo {
+    width:60%;
+  }
+  
+  .image-footer{
+    display: none;
+  }
+  
+  .info-authors {
+    font-size: 15px;
+    padding: 2vh;
+  }
+  
+  .authors {
+    padding: 0 5vw;
+  }
+}
+
