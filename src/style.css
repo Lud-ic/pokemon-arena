@@ -183,6 +183,38 @@ body {
   text-transform: uppercase;
   font-weight: bolder;
 }
+#type, #about, #name {
+color: #424b54;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.return-top-container{
+  position: absolute;
+  right: 0.25rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+.return-top-link {
+  color: #2C579D;
+  display: inline-block;
+  position: fixed;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.return-top-link a:link :visited :hover :active {
+  color: #4558ff;
+}
 
 footer {
   margin: 0;
