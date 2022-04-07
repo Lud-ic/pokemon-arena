@@ -203,12 +203,10 @@ color: #424b54;
   width: 3em;
 }
 .return-top-link {
-  color: #2C579D;
   display: inline-block;
   position: fixed;
   pointer-events: all;
   top: calc(85vh - 5rem);
-  font-size: 2rem;
   line-height: 3rem;
   width: 3rem;
   height: 3rem;
@@ -338,6 +336,12 @@ a:hover {
   .refresh-button{
     margin: 2em 0 2em 0;
     width: 40%;
+  }
+  .calculation{
+    margin-top:20px;
+  }
+  .return-top-container{
+    top: calc(85vh - 4rem);
   }
   .image-footer{
     display: none;
