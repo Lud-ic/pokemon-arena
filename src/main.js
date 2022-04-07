@@ -1,10 +1,10 @@
-import data from "./data/pokemon/pokemon.js";
-import { searchByName, selectType, calcType, sortAZ } from "./data.js";
+import data from './data/pokemon/pokemon.js';
+import { searchByName, selectType, percentageCalc, sortAZ, } from './data.js'
 
 const pokemons = data.pokemon;
 
 function cardsPokemons(data) {
-  document.getElementById("calculation").innerHTML = "";
+  document.getElementById("calculation").innerHTML = "HERE ARE ALL POKÉMONS";
   const cardPokemon = document.getElementById("cards");
   cardPokemon.innerHTML = data
     .map(
@@ -30,39 +30,40 @@ function cardsPokemons(data) {
 }
 cardsPokemons(pokemons);
 
-const search = document.getElementById("inputSearch");
+const filterType = document.querySelector("#types-filter");
+const sortOrder = document.querySelector("#sortAlphabet");
 
-search.addEventListener("keypress", (e) => {
-  const searchName = e.search.value;
-  const pokemonsName = searchByName(searchName, pokemons);
-  cardsPokemons(pokemonsName);
-});
 
-const filterType = document.querySelector(".select-typefilters");
+const refreshPage = document.getElementById("clearButton")
+const search = document.getElementById("inputSearch")
+const percentage = document.getElementById("calculation")
 
-filterType.addEventListener("change", () => {
-  const filterbyType = filterType.value;
-  const arrFilter = selectType(filterbyType, pokemons);
-  cardsPokemons(arrFilter);
-  typePercent();
-});
 
-function typePercent() {
-  const filterType = document.querySelector(".select-typefilters").value;
-  let result = calcType(pokemons, filterType);
-  document.getElementById(
-    "calculation"
-  ).innerText += `The selected pokémon represent ${result}% of the total.`;
+function showPercentage(textPercentage){
+  percentage.innerHTML = `THERE ARE ${textPercentage}`
 }
 
-const sortOrder = document.getElementById("sortAlphabet");
+filterType.addEventListener("change", (e) => {
+  e.preventDefault;
+  const arrFilter = selectType(filterType.value, pokemons);
+  cardsPokemons(arrFilter);
+  const typePercentage = `${percentageCalc(pokemons.length,arrFilter.length)}% POKÉMONS FROM THIS CATEGORY`
+  showPercentage(typePercentage);
+})
 
-sortOrder.addEventListener("change", (event) => {
-  const selectedSort = event.target.value;
+sortOrder.addEventListener("change", (e) => {
+  e.preventDefault;
+  const selectedSort = e.target.value;
   const filterAz = sortAZ(pokemons, selectedSort);
   cardsPokemons(filterAz);
-});
+})
 
-const refreshPage = document.getElementById("clearButton");
+search.addEventListener("keypress", (e) => {
+  e.preventDefault;
+  const pokemonsName = searchByName(search.value, pokemons);
+  cardsPokemons(pokemonsName);
+  const namePercentage = `${percentageCalc(pokemons.length,pokemonsName.length)}% FROM THIS CATEGORY`
+  showPercentage(namePercentage);
+})
 
 refreshPage.addEventListener("click", () => cardsPokemons(pokemons));
