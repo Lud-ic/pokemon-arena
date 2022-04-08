@@ -326,6 +326,24 @@ a:hover {
   .header-logo {
     width:60%;
   }
+  .container-filters{
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 1em 0 1em;
+  }
+
+  .filter, .select-typefilters, .sort-by{
+    margin: 2em 0 2em 0;
+    width: 40%;
+  }
+  .calculation{
+    margin-top:30px;
+  }
+
+  .refresh-button{
+    margin: 2em 0 2em 0;
+    width: 40%;
+  }
 
   .info-cards {
     width: 60vw;
