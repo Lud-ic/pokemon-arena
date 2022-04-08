@@ -59,6 +59,7 @@ filterType.addEventListener("change", (e) => {
   filterWeaknesses.selectedIndex = 0;
   filterResistant.selectedIndex = 0;
   sortOrder.selectedIndex = 0;
+  search.value = "";
   cardsPokemons(arrFilter);
   const typePercentage = `${percentageCalc(
     pokemons.length,
@@ -74,6 +75,7 @@ filterResistant.addEventListener("change", (e) => {
   filterWeaknesses.selectedIndex = 0;
   filterType.selectedIndex = 0;
   sortOrder.selectedIndex = 0;
+  search.value = "";
   cardsPokemons(arrResistant);
   const resistantPercentage = `${percentageCalc(
     pokemons.length,
@@ -89,6 +91,7 @@ filterWeaknesses.addEventListener("change", (e) => {
   filterResistant.selectedIndex = 0;
   filterType.selectedIndex = 0;
   sortOrder.selectedIndex = 0;
+  search.value = "";
   cardsPokemons(arrWeaknesses);
   const WeaknessesPercentage = `${percentageCalc(
     pokemons.length,
@@ -104,6 +107,7 @@ filterRarity.addEventListener("change", (e) => {
   filterResistant.selectedIndex = 0;
   filterType.selectedIndex = 0;
   sortOrder.selectedIndex = 0;
+  search.value = "";
   cardsPokemons(arrRarity);
   const typePercentage = `${percentageCalc(
     pokemons.length,
@@ -119,6 +123,7 @@ sortOrder.addEventListener("change", (e) => {
   filterResistant.selectedIndex = 0;
   filterType.selectedIndex = 0;
   filterRarity.selectedIndex = 0;
+  search.value = "";
   const filterAz = sortAZ(pokemons, selectedSort);
   cardsPokemons(filterAz);
 });
