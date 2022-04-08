@@ -57,9 +57,14 @@ body {
   padding-top: 1em;
 }
 
+#strong {
+  font-weight: bolder;
+}
+
 .filter, .select-typefilters, .sort-by{
   border-radius: 10px;
   background-color: #FFCE45;
+  border: solid #FFCE45;
   width: 16em;
   height: 3em;
   margin: 2em 1em 2em 1em;
@@ -278,13 +283,20 @@ a:hover {
     width:50%;
   }
 
+  .container-filters{
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 1em 0 1em;
+  }
+
   .filter, .select-typefilters, .sort-by{
-    margin: 2em 1em 2em 1em;
+    margin: 2em 0 2em 0;
+    width: 40%;
   }
 
   .refresh-button{
-    margin: 2em 1em 2em 1em;
-    padding: 0 1em 0 1em;
+    margin: 2em 0 2em 0;
+    width: 40%;
   }
 
   .info-cards{
