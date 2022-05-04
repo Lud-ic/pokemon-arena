@@ -128,8 +128,8 @@ sortOrder.addEventListener("change", (e) => {
   cardsPokemons(filterAz);
 });
 
-search.addEventListener("keypress", (e) => {
-  e.stopPropagation();
+search.addEventListener("input", (e) => {
+  e.preventDefault();
   let pokemonsName = searchByName(search.value.toUpperCase(), pokemons);
   cardsPokemons(pokemonsName);
   let namePercentage = `${percentageCalc(
