@@ -53,7 +53,7 @@ function showPercentage(textPercentage) {
 }
 
 filterType.addEventListener("change", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const arrFilter = selectType(filterType.value, pokemons);
   filterRarity.selectedIndex = 0;
   filterWeaknesses.selectedIndex = 0;
@@ -69,7 +69,7 @@ filterType.addEventListener("change", (e) => {
 });
 
 filterResistant.addEventListener("change", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const arrResistant = selectResistant(filterResistant.value, pokemons);
   filterRarity.selectedIndex = 0;
   filterWeaknesses.selectedIndex = 0;
@@ -85,7 +85,7 @@ filterResistant.addEventListener("change", (e) => {
 });
 
 filterWeaknesses.addEventListener("change", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const arrWeaknesses = selectWeaknesses(filterWeaknesses.value, pokemons);
   filterRarity.selectedIndex = 0;
   filterResistant.selectedIndex = 0;
@@ -101,7 +101,7 @@ filterWeaknesses.addEventListener("change", (e) => {
 });
 
 filterRarity.addEventListener("change", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const arrRarity = selectRarity(pokemons, e.target.value);
   filterWeaknesses.selectedIndex = 0;
   filterResistant.selectedIndex = 0;
@@ -117,7 +117,7 @@ filterRarity.addEventListener("change", (e) => {
 });
 
 sortOrder.addEventListener("change", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const selectedSort = e.target.value;
   filterWeaknesses.selectedIndex = 0;
   filterResistant.selectedIndex = 0;
@@ -129,10 +129,10 @@ sortOrder.addEventListener("change", (e) => {
 });
 
 search.addEventListener("keypress", (e) => {
-  e.preventDefault;
-  const pokemonsName = searchByName(search.value.toUpperCase(), pokemons);
+  e.stopPropagation();
+  let pokemonsName = searchByName(search.value.toUpperCase(), pokemons);
   cardsPokemons(pokemonsName);
-  const namePercentage = `${percentageCalc(
+  let namePercentage = `${percentageCalc(
     pokemons.length,
     pokemonsName.length
   )}% FROM THIS CATEGORY`;
