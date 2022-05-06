@@ -12,7 +12,7 @@
 
 ## 1. Sobre o projeto
 
-Pokémon Arena, é um plataforma criada para facilitar a vida do usuário; tendo em vista que são 251 Pokémons. Pokémon Arena, reúne diversas informações relevantes para os usuários do universo Pokémon. Desenvolvemos esta aplicação para unir fãs que buscam dados sobre todas as gerações de Pokémons, como por exemplo: espécies, raridades, forças e fraquezas. Além desses dados, o usuário encontrará, exibido em porcentagens, as informações sobre as quantidades de elementos retornados da pesquisa. 
+Pokémon Arena, é um plataforma criada para facilitar a vida do usuário; tendo em vista que são 251 Pokémons. Pokémon Arena, reúne diversas informações relevantes para os usuários do universo Pokémon. Desenvolvemos esta aplicação para unir fãs que buscam dados sobre todas as gerações de Pokémons, como por exemplo: espécies, raridades, forças e fraquezas. Além desses dados, o usuário encontrará, exibido em porcentagens, as informações sobre as quantidades de elementos retornados da pesquisa. O desafio desse projeto foi planejar e desenvolver a refatoração de uma página já existente. Abaixo, você pode conferir a versão anterior:  
 
 
 ## 2. Desenvolvedoras
